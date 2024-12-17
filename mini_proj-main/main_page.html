@@ -1,0 +1,448 @@
+<!doctype html>
+<html>
+  <head>
+    <title>FITLAB</title>
+    <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+   <link rel="stylesheet" href="style1.css">
+   
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+  integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+  </head>
+  <body>
+    <style>
+      .container {
+      display: flex;
+      align-items: center;
+      justify-content: center
+    }
+    
+    img {
+      max-width: 100%;
+      max-height:100%;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+    
+    .text {
+      font-size: 20px;
+      padding-left: 20px;
+      color:aliceblue;
+    }
+  
+    .content-container {
+              display: flex;
+              max-width: 1000px;
+              border: 2px solid #ddd;
+              border-radius: 10px;
+              overflow: hidden;
+              background-color: #f9f9f9;
+          }
+
+
+          *{
+        font-family: 'poppins', 'sans-serif';
+        box-sizing: border-box;
+    }
+
+    .footer{
+        margin-top:150px;
+        width:100%;
+        padding:100px 15%;
+        background:#333;
+        color:#efefef;
+        display:flex;
+    }
+    .footer div{
+        text-align: center;
+    }
+
+    .col-2{
+        flex-grow:2;
+    }
+
+    .footer div h3{
+        font-weight:300;
+        margin-bottom: 30px;
+        letter-spacing:1px ;
+    }
+
+    .col-1 a{
+        display:block;
+        text-decoration:none ;
+        color: #efefef;
+        margin-bottom: 10px;
+    }
+    form input{
+        width:400px;
+        height: 45px;
+        border-radius: 4px;
+        text-align:center;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        outline:none;
+        border:none;
+    }
+    .social-icons{
+        margin-top:30px;
+    }
+    .social-icons i{
+        font-size:22px;
+        margin:10px;
+        cursor:pointer;
+    }
+      </style>
+
+    <header>
+      <div class="navbar">
+        <div class="logo"><a href="main page.html">WHALE OPTIMIZATION ALGORITHM</a></div>
+        <ul class=" links">
+          <li><a href="file:///C:/Users/Diksha%20N/OneDrive/Desktop/WEB/fitness.html">Home</a></li>
+          <li><a href="https://www.sciencedaily.com/news/health_medicine/fitness/">TRY IT YOURSELF
+          </a></li>
+        </ul>
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </header>
+   <div class="slider">
+     <div class="myslider fade" style="display: block;">
+      <div class="txt">
+      <h1> WHAT IS A DISTRIBUTED GENERATOR</h1>
+      <p>Distributed generator (DG) resources are small scale electric power generating plants that can provide power to
+        homes, businesses or industrial facilities in distribution systems</p>
+     </div>
+     <img src="https://shutterstock.com/image-vector/renewable-energy-power-distribution-house-600nw-2107579478.jpg" style="width :100% ;height :100% ">
+    </div>
+
+
+    <div class="myslider fade">
+      <div class="txt">
+      <h1>What is Whale Optimization Algorithm?</h1>
+      <p> The
+        whales are considered to be as highly intelligent animals
+        with motion. The WOA is inspired by the unique hunting behavior of humpback whales. Usually the humpback whales prefer to hunt krills or small fishes which are
+        close to the surface of sea. Humpback whales use a special unique hunting method called bubble net feeding
+        method. In this method they swim around the prey and
+        create a distinctive bubbles along a circle or 9-shaped
+        path.
+        The mathematical model of WOA is described in the
+        following sections
+        1. Encircling prey.
+        2. Bubble net hunting method.
+        3. Search the prey. </p></div>
+      <img src="https://ars.els-cdn.com/content/image/1-s2.0-S092523122200474X-gr11.jpg" style="width :100% ;height :100% ">
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="dotsbox" style="text-align: center;">
+      <span class="dot" onlick="currentSlide(1)"></span>
+      <span class="dot" onlick="currentSlide(2)"></span>
+
+    </div>
+   </div>
+   
+    <script src="mainpage.js" >
+    
+      const toggleBtn =document.querySelector('.toggle_btn')
+      const toggleBtnIcon=document.querySelector('.toggle_btn i')
+      const dropdown_menu=document.querySelector('.dropdown_menu')
+
+      toggleBtn.onclick = function()
+      {
+        dropdown_menu.classList.toggle('open')
+        const isOpen =dropdown_menu.classList.contains('open')
+        toggleBtnIcon.classList= isOpen
+        ? 'fa-solid fa-xmark'
+        :'fa-solid fa-bars'
+      }
+    </script>
+    <!--here is the body for the general simulation-->
+
+<div style="padding-left: 40px;">
+    <br>
+    <br>
+    <br>
+    <h1 > Define the Problem:
+    </h1>
+    <body style=" color: white; margin: 20px; font-family: Arial, sans-serif; ">
+
+      <h3 >Objective Function</h3>
+      <ul style="list-style-type: none; ">
+          <li ><strong>Power Loss:</strong> The objective could be minimizing the total active and reactive power losses in the distribution system.</li>
+          <li ><strong>Cost:</strong> The cost associated with the installation, operation, and maintenance of DGs.</li>
+          <li><strong>Voltage Stability:</strong> Ensuring that voltage levels at each bus are stable and within acceptable limits.</li>
+      </ul>
+  
+      <h3>Variables</h3>
+      <ul style="list-style-type: none; ">
+          <li ><strong>DG Location:</strong> The optimal location(s) of Distributed Generators (DGs) in the grid.</li>
+          <li ><strong>DG Capacity:</strong> The power capacity of each DG to install.</li>
+      </ul>
+  
+      <h3  >Constraints</h3>
+      <ul style="list-style-type: none; ">
+          <li ><strong>Voltage Limits:</strong> Voltage at each node should stay within acceptable limits.</li>
+          <li ><strong>Power Flow:</strong> The power generated should not exceed the power demand.</li>
+          <li ><strong>DG Capacity:</strong> The size of each DG should not exceed its maximum capacity.</li>
+      </ul>
+
+<br>
+
+
+      <h1>Whale Optimization Algorithm (WOA) Steps</h1>
+    <ol>
+        <li>
+            <strong>Initialization:</strong>
+            <ul>
+                <li>Initialize a population of whales (solutions) randomly.</li>
+                <li>Each whale represents a solution with a candidate location and size for the DGs.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Fitness Evaluation:</strong>
+            <ul>
+                <li>Calculate the fitness of each whale based on the chosen objective function (e.g., power loss or cost).</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Exploration and Exploitation:</strong>
+            <ul>
+                <li>
+                    <strong>Exploration:</strong> Whales search for global optima by randomly adjusting their positions, simulating the search for prey.
+                </li>
+                <li>
+                    <strong>Exploitation:</strong> Whales refine their search by updating their position toward the best solution found so far (like hunting the prey).
+                </li>
+            </ul>
+        </li>
+        <li>
+            <strong>Update Position:</strong>
+            <ul>
+                <li>The position of each whale is updated using the WOA formula, which mimics the behavior of humpback whales during hunting.</li>
+                <li>The movement of a whale is determined by its distance from the prey (best solution), and it will either encircle or approach the prey.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Termination:</strong>
+            <ul>
+                <li>The algorithm stops after a predefined number of iterations or once convergence criteria are met.</li>
+            </ul>
+        </li>
+    </ol>
+
+
+    <br>
+    <ol>
+      <li>
+          <h1>Application to DG Optimization:</h1>
+          <ul>
+              <li>
+                  <strong>Objective Function Example:</strong> Minimize the power loss in the grid due to improper DG placement. This can be expressed as:
+                  <br>
+                  <em>Objective Function = ∑<sub>lines</sub> Power Loss (P) = f(DG Location, DG Capacity)</em>
+              </li>
+          </ul>
+      </li>
+      <li>
+          <strong>Optimization Process:</strong>
+          <ul>
+              <li>WOA evaluates multiple locations for Distributed Generators (DGs).</li>
+              <li>Both positions (locations) and capacities are adjusted to minimize the power loss or cost.</li>
+          </ul>
+      </li>
+      <li>
+
+        <br>
+
+          <h1>Output:</h1>
+          <ul>
+              <li>The optimized locations and capacities of DGs that achieve the objective (e.g., reduced power loss or cost).</li>
+          </ul>
+      </li>
+      <li>
+          <strong>Summary:</strong>
+          <ul>
+              <li>WOA helps in finding optimal locations and sizes for DGs in a distribution network.</li>
+              <li>It balances the trade-off between reducing losses, improving voltage profiles, and minimizing costs.</li>
+          </ul>
+      </li>
+  </ol>
+  
+
+
+
+  <br>
+  <br>
+  <br>
+
+  <h1>Whale Optimization Algorithm (WOA) for DG Optimization</h1>
+  <p>
+      The Whale Optimization Algorithm is applied to find the best locations and capacities for Distributed Generators (DGs) in a power distribution system. Here’s what each parameter means:
+  </p>
+  <ul>
+      <li>
+          <strong>Number of Buses:</strong> Number of connection points (buses) in the system.
+      </li>
+      <li>
+          <strong>Resistances:</strong> The resistive properties of the transmission lines between buses.
+      </li>
+      <li>
+          <strong>Population Size:</strong> Number of candidate solutions (whales) evaluated during each iteration.
+      </li>
+      <li>
+          <strong>Max Iterations:</strong> Maximum number of algorithm cycles (iterations) to refine solutions.
+      </li>
+      <li>
+          <strong>Min DG Size:</strong> The smallest allowed DG capacity (in kW) for installation.
+      </li>
+      <li>
+          <strong>Max DG Size:</strong> The largest allowed DG capacity (in kW) for installation.
+      </li>
+      <li>
+          <strong>Best Solution:</strong> The optimal placement and sizing of DGs found by the algorithm.
+      </li>
+      <li>
+          <strong>Minimum Loss:</strong> The goal of minimizing power losses in the system by placing DGs optimally.
+      </li>
+  </ul>
+<br>
+<br>
+<h1>INPUT AND OUTPUT OF WOA DG</h1>
+  <h3 >1. What the 15 Numbers Represent</h3>
+  <ul style="list-style-type: none; padding-left: 20px;">
+      <li style="margin-bottom: 10px;">Each of the 15 values corresponds to the size of a <strong>Distributed Generator (DG)</strong> placed at a particular bus in the power system.</li>
+      <li style="margin-bottom: 10px;">The values represent the amount of power (in kW or MW) generated by the DG at each bus to minimize the total system power loss.</li>
+      <li style="margin-bottom: 10px;">Example: If the result is 60, 120, 0, 0, 3000, ..., this means:
+          <ul style="list-style-type: disc; padding-left: 30px;">
+              <li>A 60 kW DG is placed at bus 1.</li>
+              <li>A 120 kW DG is placed at bus 2.</li>
+              <li>No DG is placed at buses 3 and 4 (indicated by 0).</li>
+              <li>A 3000 kW DG is placed at bus 5, and so on.</li>
+          </ul>
+      </li>
+  </ul>
+  <br>
+  <h3 >2. What These Numbers Mean</h3>
+  <ul style="list-style-type: none; padding-left: 20px;">
+      <li style="margin-bottom: 10px;"><strong>Positive Values:</strong> Each positive value represents the size (or power capacity) of the DG installed at that specific bus. These values range from the minimum DG size to the maximum DG size based on the optimization constraints.</li>
+      <li style="margin-bottom: 10px;"><strong>Example:</strong> A value of 3000 indicates a 3000 kW DG is installed at the bus (maximum allowable size).</li>
+      <li style="margin-bottom: 10px;"><strong>Zero Values:</strong> A value of 0 means that no DG has been placed at that bus. It indicates that placing a DG there is not optimal for minimizing system losses.</li>
+  </ul>
+  <br>
+  <h3 >3. How They Help in Minimizing Loss</h3>
+  <ul style="list-style-type: none; padding-left: 20px;">
+      <li style="margin-bottom: 10px;">The algorithm determines the optimal placement and size of DGs for each bus to minimize the total system loss.</li>
+      <li style="margin-bottom: 10px;">The output of the 15 numbers shows how much power each bus will generate if a DG is placed there, which contributes to minimizing power losses.</li>
+      <li style="margin-bottom: 10px;">These numbers are part of the best solution, where DGs are strategically placed and sized to reduce the total system power loss.</li>
+  </ul>
+  <br>
+  <h3 >4. How to Interpret the Output</h3>
+  <ul style="list-style-type: none; padding-left: 20px;">
+      <li style="margin-bottom: 10px;">If the output contains mostly zeros and a few non-zero values, it means DGs are placed only at specific buses where they have the greatest impact on reducing losses.</li>
+      <li style="margin-bottom: 10px;">The algorithm avoids placing DGs at buses where their presence does not significantly reduce system losses.</li>
+      <li style="margin-bottom: 10px;">The values should adhere to the constraints of minimum and maximum DG sizes defined in the optimization problem.</li>
+  </ul>
+  <br>
+  <h3 >Example of Output</h3>
+  <ul style="list-style-type: none; padding-left: 20px;">
+      <li style="margin-bottom: 10px;">Let's assume the output for a system with 15 buses is:</li>
+      <pre style="background-color: #444; color: white; padding: 10px; margin: 10px; font-family: monospace;">0, 1000, 0, 0, 500, 0, 0, 0, 3000, 0, 2000, 0, 0, 0, 1500</pre>
+      <li style="margin-bottom: 10px;">This means:
+          <ul style="list-style-type: disc; padding-left: 30px;">
+              <li><strong>Bus 1:</strong> No DG (0 kW).</li>
+              <li><strong>Bus 2:</strong> A 1000 kW DG is installed.</li>
+              <li><strong>Bus 3:</strong> No DG (0 kW).</li>
+              <li><strong>Bus 4:</strong> No DG (0 kW).</li>
+              <li><strong>Bus 5:</strong> A 500 kW DG is installed.</li>
+              <li><strong>Bus 6:</strong> No DG (0 kW).</li>
+              <li><strong>Bus 7:</strong> No DG (0 kW).</li>
+              <li><strong>Bus 8:</strong> No DG (0 kW).</li>
+              <li><strong>Bus 9:</strong> A 3000 kW DG is installed (maximum size).</li>
+              <li><strong>Bus 10:</strong> No DG (0 kW).</li>
+              <li><strong>Bus 11:</strong> A 2000 kW DG is installed.</li>
+              <li><strong>Bus 12:</strong> No DG (0 kW).</li>
+              <li><strong>Bus 13:</strong> No DG (0 kW).</li>
+              <li><strong>Bus 14:</strong> No DG (0 kW).</li>
+              <li><strong>Bus 15:</strong> A 1500 kW DG is installed.</li>
+          </ul>
+      </li>
+  </ul>
+  <br>
+  <h3 >Conclusion</h3>
+  <ul style="list-style-type: none; padding-left: 20px;">
+      <li style="margin-bottom: 10px;">The minimum loss output is a configuration that provides the optimal placement and sizing of DGs to minimize power loss in the distribution system.</li>
+      <li style="margin-bottom: 10px;">Non-zero values represent the DG sizes at the respective buses, while zero values indicate no DGs placed at those buses.</li>
+      <li style="margin-bottom: 10px;">This configuration ensures that the system has minimal power loss while satisfying constraints such as the minimum and maximum DG size limits.</li>
+  </ul>
+
+</div>
+  </body>
+  <br>
+  <br>
+  <br>
+
+   
+    <h1 style="color:white;text-align: center;">  Why this algorithm?</h1>
+    <div class="container1">
+      
+      <div class="box">
+          <h3>Fast convergence</h3>
+          <p>WOA is known for its fast convergence speed, allowing it to reach optimal or near-optimal solutions more quickly compared to other optimization algorithms. This accelerated convergence significantly reduces the overall computational burden, making it suitable for time-sensitive or resource-constrained tasks.</p>
+          
+          <span class="count">1</span>
+      </div>
+      <div class="box">
+          <h3>Easy to implement</h3>
+          <p>WOA is designed with simplicity in mind, featuring a minimal number of predetermined parameters that make it straightforward to configure and use. Its implementation requires fewer adjustments, enabling users to deploy the algorithm quickly without the need for extensive fine-tuning. </p>
+          
+          <span class="count">2</span>
+      </div>
+      <div class="box">
+          <h3>Robust</h3>
+          <p>WOA demonstrates high robustness and versatility, making it an effective algorithm for solving a wide variety of optimization problems across diverse domains. Its adaptive nature ensures reliable performance, even in complex, nonlinear, or multi-dimensional problem spaces.This robustness allows WOA to deliver consistent and high-quality solutions in various practical applications.</p>
+       
+          <span class="count">3</span>
+      </div>
+      <div class="box">
+        <h3>Applications</h3>
+        <p> It's been used in many applications like image retrieval, image segmentation, medicine, energy, neural networks, feature selection, wind speed prediction, key recognition, and sentiment analysis. </p>
+        
+        <span class="count">4</span>
+    </div>
+  
+  </div>
+
+
+
+
+    <div class="footer">
+      <div class="col-1">
+          <h3>Useful Links</h3>
+          <a href="https://www.sciencedirect.com/science/article/abs/pii/S0965997816300163">Article 1</a>
+          <a href="https://link.springer.com/article/10.1007/s11831-023-09928-7">Article 2</a>
+          <a href="https://ijeecs.iaescore.com/index.php/IJEECS/article/view/29446">Article 3</a>
+          
+      </div>
+      <div class="col-2">
+          <h3 style="padding-left: 50px;">FOR ADDITIONAL CONTENT CLICK ON THE LINKS GIVEN </h3>
+          <h4>1- Science Direct</h4>
+          <h4>2- Springer</h4>
+          <h4>3- IJEECS</h4>
+         
+      </div>
+      <div class="col-3">
+          <h3>BASED IN</h3>
+          <P>Bull Temple Rd, Basavanagudi
+               <br>Bengaluru, Karnataka <br> 560019
+          </P>
+
+      </div>
+  </div>
+  
+  </body>
+</html>
